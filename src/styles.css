@@ -2,3 +2,11 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+header {
+  background: #5f9ea0;
+}
+header h1 {
+  font-size: 20px;
+  padding: 5px;
+}
