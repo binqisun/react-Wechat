@@ -25,10 +25,10 @@ export default function textMessage() {
         <Grid container spacing={2} wrap="nowrap">
           <Grid item sx={{ width: 80, height: 80 }}>
             <Item>
-              <Img alt="User" src="../me.jpeg" />
+              <Img alt="User" src="../her.jpeg" />
             </Item>
           </Grid>
-          <Grid item xs={9} zeroMinWidth>
+          <Grid item xs={8} zeroMinWidth>
             <Item style={{ overflowWrap: "break-word" }}>
               ThisistextMessagekkkkkkkkasdasdasdasdasdasd
               kkkasdasdasdasdasdasdasdasdjkashdkjasdkh
@@ -39,15 +39,14 @@ export default function textMessage() {
       <div></div>
       <div className="meTextMessage">
         <Grid container spacing={2} justifyContent="flex-end" wrap="nowrap">
-          <Grid item xs={9} zeroMinWidth>
+          <Grid item xs={8} zeroMinWidth>
             <Item
               style={{
                 overflowWrap: "break-word",
                 backgroundColor: "#90EE90"
               }}
             >
-              ThisistextMessagekkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-              hhhhhhhhhhhhhhhhhhhhajhs dkhashdkaksdkahskdhkashkdhkhhhhhhhhhhh
+              ThisistextMessagekkkkkkkkkkajhskjdashkdhkasjdkasd
             </Item>
           </Grid>
           <Grid item sx={{ width: 80, height: 80 }}>
