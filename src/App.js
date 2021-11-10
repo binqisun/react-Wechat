@@ -1,4 +1,5 @@
 import "./styles.css";
+import MessageList from "./components/messageList";
 
 export default function App() {
   return (
@@ -6,6 +7,9 @@ export default function App() {
       <header>
         <h1>Wechat App</h1>
       </header>
+      <div>
+        <MessageList />
+      </div>
     </div>
   );
 }
