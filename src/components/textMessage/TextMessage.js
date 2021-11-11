@@ -7,8 +7,10 @@ export default function TextMessage({ textMessages }) {
   return (
     <div className="textMessage">
       {textMessages.isUser === true ? (
+        // display the text messages sent from myself
         <MeText text={textMessages.text} />
       ) : (
+        // display the text messages sent from other people
         <OtherText text={textMessages.text} />
       )}
     </div>

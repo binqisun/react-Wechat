@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import "./textMessage.css";
 
+// set grid item styles
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
@@ -11,6 +12,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary
 }));
 
+// set styles for user profile picture
 const Img = styled("img")({
   margin: "auto",
   display: "block",
@@ -18,9 +20,12 @@ const Img = styled("img")({
   maxHeight: "100%"
 });
 
+// if text messages sent from others:
+// display profile pictures on the left, messages on the right
 export default function OtherText({ text }) {
   return (
     <div className="otherTextMessage">
+      {/* set messages fit in the grid */}
       <Grid container spacing={2} wrap="nowrap">
         <Grid item sx={{ width: 80, height: 80 }}>
           <Item>

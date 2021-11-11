@@ -74,5 +74,6 @@ const messageContent = messages.map((message) => {
 });
 
 export default function MessageList() {
+  // read the message content
   return <div className="messageList">{messageContent}</div>;
 }
