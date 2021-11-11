@@ -1,4 +1,5 @@
 import React from "react";
+// import components for different message types
 import SystemMessage from "./systemMessage/SystemMessage";
 import ImageMessage from "./imageMessage/ImageMessage";
 import TextMessage from "./textMessage/TextMessage";
@@ -56,12 +57,16 @@ const messages = [
   }
 ];
 
+// Display different types of messages
 const messageContent = messages.map((message) => {
   return message.type === 1 ? (
+    // Type 1 display text messages
     <TextMessage textMessages={message} />
   ) : message.type === 2 ? (
+    // Type 2 display image messages
     <ImageMessage imageMessages={message} />
   ) : message.type === 3 ? (
+    // Type 3 display System messages
     <SystemMessage systemMessages={message} />
   ) : (
     "Other Message Type"
