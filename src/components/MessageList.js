@@ -28,17 +28,17 @@ const messages = [
   },
   {
     id: 3,
-    type: 3,
-    time: "158692902000",
-    text: "你撤回一条信息",
-    isUser: false
-  },
-  {
-    id: 4,
     type: 2,
     time: "158692902000",
     url: "../HotPot.jpeg",
     isUser: true
+  },
+  {
+    id: 4,
+    type: 3,
+    time: "158692902000",
+    text: "你撤回一条信息",
+    isUser: false
   },
   {
     id: 5,
