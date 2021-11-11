@@ -18,7 +18,7 @@ const Img = styled("img")({
   maxHeight: "100%"
 });
 
-export default function textMessage({ text }) {
+export default function OtherText({ text }) {
   return (
     <div className="otherTextMessage">
       <Grid container spacing={2} wrap="nowrap">

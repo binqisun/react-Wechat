@@ -18,7 +18,7 @@ const Img = styled("img")({
   maxHeight: "100%"
 });
 
-export default function textMessage({ text }) {
+export default function meText({ text }) {
   return (
     <div className="meTextMessage">
       <Grid container spacing={2} justifyContent="flex-end" wrap="nowrap">
