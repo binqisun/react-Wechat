@@ -1,4 +1,8 @@
 .meTextMessage {
-  padding: 10px;
-  display: "flex";
+  padding: 2px;
+  font-size: 16px;
+}
+.otherTextMessage {
+  padding: 2px;
+  font-size: 16px;
 }

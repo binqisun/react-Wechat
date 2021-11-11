@@ -18,9 +18,9 @@ const Img = styled("img")({
   maxHeight: "100%"
 });
 
-export default function textMessage() {
+export default function textMessage({ text }) {
   return (
-    <div className="meTextMessage">
+    <div className="otherTextMessage">
       <Grid container spacing={2} wrap="nowrap">
         <Grid item sx={{ width: 80, height: 80 }}>
           <Item>
@@ -28,11 +28,7 @@ export default function textMessage() {
           </Item>
         </Grid>
         <Grid item xs={8} zeroMinWidth>
-          <Item style={{ overflowWrap: "break-word" }}>
-            ThisistextMessagekkkkkkkkasdasdasdasdasdasd
-            kkkasdasdasdasdasdasdasdasdjkashdkjasdkhkjahskdhakjsdhaskjd
-            kahsdjasdhasjdhkahsdhashkjashdjhsakdsahdhkjashkjdsahdkahsjdha
-          </Item>
+          <Item style={{ overflowWrap: "break-word" }}>{text}</Item>
         </Grid>
       </Grid>
     </div>

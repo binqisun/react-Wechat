@@ -18,7 +18,7 @@ const Img = styled("img")({
   maxHeight: "100%"
 });
 
-export default function textMessage() {
+export default function textMessage({ text }) {
   return (
     <div className="meTextMessage">
       <Grid container spacing={2} justifyContent="flex-end" wrap="nowrap">
@@ -29,7 +29,7 @@ export default function textMessage() {
               backgroundColor: "#90EE90"
             }}
           >
-            ThisistextMessagekkkkkkkkkkajhskjdashkdhkasjdkasd
+            {text}
           </Item>
         </Grid>
         <Grid item sx={{ width: 80, height: 80 }}>

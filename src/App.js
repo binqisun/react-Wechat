@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <Container maxWidth="sm">
         <header>
-          <h1>Wechat App</h1>
+          <h1>吃货群</h1>
         </header>
         <div>
           <MessageList />
