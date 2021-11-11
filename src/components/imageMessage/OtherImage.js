@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-import "./textMessage.css";
+import "./imageMessage.css";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -18,23 +18,18 @@ const Img = styled("img")({
   maxHeight: "100%"
 });
 
-export default function meText({ text }) {
+export default function OtherImage({ image }) {
   return (
-    <div className="meTextMessage">
-      <Grid container spacing={2} justifyContent="flex-end" wrap="nowrap">
-        <Grid item xs={8} zeroMinWidth>
-          <Item
-            style={{
-              overflowWrap: "break-word",
-              backgroundColor: "#90EE90"
-            }}
-          >
-            {text}
-          </Item>
-        </Grid>
+    <div className="otherImageMessage">
+      <Grid container spacing={2} wrap="nowrap">
         <Grid item sx={{ width: 80, height: 80 }}>
           <Item>
-            <Img alt="User" src="../me.jpeg" />
+            <Img alt="User" src="../her.jpeg" />
+          </Item>
+        </Grid>
+        <Grid item xs={8} zeroMinWidth>
+          <Item style={{ overflowWrap: "break-word" }}>
+            <Img alt="Image" src={image} />
           </Item>
         </Grid>
       </Grid>
