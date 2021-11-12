@@ -4,25 +4,25 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import "./imageMessage.css";
 
-// set grid item styles
-const Item = styled(Paper)(({ theme }) => ({
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "left",
-  color: theme.palette.text.secondary
-}));
-
-// set styles for user profile picture
-const Img = styled("img")({
-  margin: "auto",
-  display: "block",
-  maxWidth: "100%",
-  maxHeight: "100%"
-});
-
 // if image messages sent from myself:
 // display profile pictures on the right, messages on the left
 export default function MeImage({ image }) {
+  // set grid item styles
+  const Item = styled(Paper)(({ theme }) => ({
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: "left",
+    color: theme.palette.text.secondary
+  }));
+
+  // set styles for user profile picture
+  const Img = styled("img")({
+    margin: "auto",
+    display: "block",
+    maxWidth: "100%",
+    maxHeight: "100%"
+  });
+
   return (
     <div className="meImageMessage">
       <Grid container spacing={2} justifyContent="flex-end" wrap="nowrap">
