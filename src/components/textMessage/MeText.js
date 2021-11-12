@@ -6,7 +6,7 @@ import "./textMessage.css";
 
 // if text messages sent from myself:
 // display profile pictures on the right, messages on the left
-export default function MeText({ text }) {
+export default function MeText({ text, userName }) {
   // set grid item styles
   const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
@@ -27,8 +27,9 @@ export default function MeText({ text }) {
     <div className="meTextMessage">
       {/* set messages fit in the grid */}
       <Grid container spacing={2} justifyContent="flex-end" wrap="nowrap">
-        <Grid item xs={8} zeroMinWidth>
+        <Grid item xs={8}>
           {/* set styles for message */}
+          <span className="spanMyName">{userName}</span>
           <Item
             style={{
               overflowWrap: "break-word",

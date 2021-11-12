@@ -6,7 +6,7 @@ import "./textMessage.css";
 
 // if text messages sent from others:
 // display profile pictures on the left, messages on the right
-export default function OtherText({ text }) {
+export default function OtherText({ text, userName }) {
   // set grid item styles
   const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
@@ -33,6 +33,7 @@ export default function OtherText({ text }) {
           </Item>
         </Grid>
         <Grid item xs={8} zeroMinWidth>
+          <span className="spanOtherName">{userName}</span>
           <Item style={{ overflowWrap: "break-word" }}>{text}</Item>
         </Grid>
       </Grid>

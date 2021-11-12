@@ -6,7 +6,7 @@ import "./imageMessage.css";
 
 // if image messages sent from others:
 // display profile pictures on the left, messages on the right
-export default function OtherImage({ image }) {
+export default function OtherImage({ image, userName }) {
   // set grid item styles
   const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
@@ -32,6 +32,7 @@ export default function OtherImage({ image }) {
           </Item>
         </Grid>
         <Grid item xs={8} zeroMinWidth>
+          <span className="spanOtherName">{userName}</span>
           <Item style={{ overflowWrap: "break-word" }}>
             <Img alt="Image" src={image} />
           </Item>

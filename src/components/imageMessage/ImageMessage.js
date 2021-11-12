@@ -8,10 +8,10 @@ export default function ImageMessage({ imageMessages }) {
     <div className="imageMessage">
       {imageMessages.isUser === true ? (
         // display the image messages sent from myself
-        <MeImage image={imageMessages.url} />
+        <MeImage image={imageMessages.url} userName={imageMessages.name} />
       ) : (
         // display the image messages sent from other people
-        <OtherImage image={imageMessages.url} />
+        <OtherImage image={imageMessages.url} userName={imageMessages.name} />
       )}
     </div>
   );

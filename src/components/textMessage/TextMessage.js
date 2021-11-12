@@ -8,10 +8,10 @@ export default function TextMessage({ textMessages }) {
     <div className="textMessage">
       {textMessages.isUser === true ? (
         // display the text messages sent from myself
-        <MeText text={textMessages.text} />
+        <MeText text={textMessages.text} userName={textMessages.name} />
       ) : (
         // display the text messages sent from other people
-        <OtherText text={textMessages.text} />
+        <OtherText text={textMessages.text} userName={textMessages.name} />
       )}
     </div>
   );
